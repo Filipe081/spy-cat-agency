@@ -1,51 +1,39 @@
-md (English)
+# 🐾 Spy Cat Agency - Management System
 
-# Spy Cat Agency - Project
-
-This project is a CRUD application to manage Spy Cats, their missions, and targets, developed as part of a technical assessment.
+Gerenciamento de gatos espiões, suas missões e alvos.
 
 ---
 
-## Backend
+## 🇬🇧 ENGLISH VERSION
 
-- Framework: FastAPI
-- Database: SQLite (or your chosen database)
-- Features:
-  - Manage Spy Cats (Create, Read, Update, Delete)
-  - Manage Missions and Targets
-  - Breed validation using [TheCatAPI](https://api.thecatapi.com/v1/breeds)
+### 📋 Project Overview
 
-### How to run the backend
+This project was developed as part of a technical assessment. It includes a FastAPI backend and a Next.js frontend to manage spy cats, their missions, and assigned targets.
 
-1. Create and activate a virtual environment:
+### 🧠 Technologies
+
+- ✅ Backend: FastAPI + SQLite  
+- ✅ Frontend: Next.js (TypeScript)  
+- ✅ External API: [TheCatAPI](https://api.thecatapi.com/v1/breeds)
+
+---
+
+### ⚙️ How to Run
+
+#### ▶️ Backend (FastAPI)
 
 ```bash
+# 1. Create virtual environment
 python -m venv venv
-# On Windows
+
+# 2. Activate environment
+# Windows:
 venv\Scripts\activate
-# On macOS/Linux
+# Linux/macOS:
 source venv/bin/activate
 
-md (Português Brasil)
+# 3. Install dependencies
+pip install -r requirements.txt
 
-# Spy Cat Agency - Projeto
-
-Este projeto é uma aplicação CRUD para gerenciar Spy Cats e suas missões, conforme o teste técnico solicitado.
-
----
-
-## Backend
-
-- Framework: FastAPI
-- Banco de dados: SQLite (ou o que você estiver usando)
-- Endpoints para gerenciar Spy Cats, Missões e Targets
-- Validação do Breed via TheCatAPI
-
-### Como rodar o backend
-
-1. Crie e ative o ambiente virtual:
-
-```bash
-python -m venv venv
-source venv/bin/activate # Linux/macOS
-venv\Scripts\activate    # Windows
+# 4. Run the server
+uvicorn main:app --reload
